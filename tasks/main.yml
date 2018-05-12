@@ -32,3 +32,12 @@
     group: root
     mode: 0755
   become: true
+
+- name: Copy the rpi cmake toolchain file
+  template:
+    src: toolchain-rpi.cmake
+    dest: /usr/local/etc/toolchain-rpi.cmake
+    owner: root
+    group: root
+    mode: 0644
+  become: true
