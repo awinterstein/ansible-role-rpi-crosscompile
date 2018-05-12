@@ -1,0 +1,34 @@
+---
+- name: Install tools, necessary for compiling crosstool-ng
+  apt: name={{item}} state=present
+  with_items:
+    - gperf
+    - bison
+    - flex
+    - texinfo
+    - help2man
+    - gawk
+    - libncurses5-dev
+    - make
+    - python-dev
+    - dh-autoreconf
+    - libtool-bin
+  become: true
+
+- name: Copy rpi toolchain configuration file
+  template:
+    src: arm-rpi-linux-gnueabihf.config
+    dest: /usr/local/etc/arm-rpi-linux-gnueabihf.config
+    owner: root
+    group: root
+    mode: 0644
+  become: true
+
+- name: Copy rpi toolchain build script
+  template:
+    src: build-rpi-toolchain.sh
+    dest: /usr/local/bin/build-rpi-toolchain.sh
+    owner: root
+    group: root
+    mode: 0755
+  become: true

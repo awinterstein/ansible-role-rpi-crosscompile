@@ -1,0 +1,18 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: awinterstein
+  description: Cross compilation toolchain creation for the Raspberry Pi
+  license: MIT License
+  min_ansible_version: 2.2
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  galaxy_tags:
+    - development
+    - system
