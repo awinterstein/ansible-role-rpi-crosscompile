@@ -2,3 +2,5 @@ tarballs_dir: "{{toolsdir}}/download_cache/crosstool-ng/tarballs"
 toolchains_dir: "{{toolsdir}}/toolchains"
 toolchain_prefix: arm-rpi-linux-gnueabihf
 
+raspi_address: raspberrypi
+raspi_user: pi
