@@ -17,6 +17,7 @@ function sync_additionals_into_sysroot() {
                                           :/usr/lib/arm-linux-gnueabihf/libcrypto* \
                                           :/usr/lib/arm-linux-gnueabihf/libcares* \
                                           :/usr/lib/arm-linux-gnueabihf/libboost_* \
+                                          :/usr/lib/arm-linux-gnueabihf/libgthread* \
                                           :/usr/lib/arm-linux-gnueabihf/libmosquitto.* \
                                           :/usr/lib/arm-linux-gnueabihf/libdouble-conversion.* \
                                           :/usr/lib/arm-linux-gnueabihf/libpng16.* \
@@ -29,6 +30,31 @@ function sync_additionals_into_sysroot() {
                                           :/lib/arm-linux-gnueabihf/libglib-2.0.* \
                                           :/lib/arm-linux-gnueabihf/libpcre.* \
                                           :/opt/vc/lib/* \
+                                          \
+                                          :/usr/include/pqxx \
+                                          :/usr/include/taglib \
+                                          :/usr/include/mpd \
+                                          :/usr/lib/arm-linux-gnueabihf/libpq* \
+                                          :/usr/lib/arm-linux-gnueabihf/libtag* \
+                                          :/usr/lib/libmpdclient.* \
+                                          :/usr/lib/arm-linux-gnueabihf/libldap_r* \
+                                          :/usr/lib/arm-linux-gnueabihf/libgssapi_krb5* \
+                                          :/usr/lib/arm-linux-gnueabihf/libicuuc* \
+                                          :/usr/lib/arm-linux-gnueabihf/libicudata* \
+                                          :/usr/lib/arm-linux-gnueabihf/libkrb5* \
+                                          :/usr/lib/arm-linux-gnueabihf/libk5crypto* \
+                                          :/usr/lib/arm-linux-gnueabihf/liblber* \
+                                          :/usr/lib/arm-linux-gnueabihf/libsasl2* \
+                                          :/usr/lib/arm-linux-gnueabihf/libgnutls* \
+                                          :/usr/lib/arm-linux-gnueabihf/libgmp* \
+                                          :/usr/lib/arm-linux-gnueabihf/libhogweed* \
+                                          :/usr/lib/arm-linux-gnueabihf/libnettle* \
+                                          :/usr/lib/arm-linux-gnueabihf/libtasn1* \
+                                          :/usr/lib/arm-linux-gnueabihf/libp11* \
+                                          :/usr/lib/arm-linux-gnueabihf/libffi* \
+                                          :/lib/arm-linux-gnueabihf/libcom_err* \
+                                          :/lib/arm-linux-gnueabihf/libkeyutils* \
+                                          :/lib/arm-linux-gnueabihf/libidn* \
                                           "$SYSROOT_DIR"
 
     # write LD config file for the sysroot
