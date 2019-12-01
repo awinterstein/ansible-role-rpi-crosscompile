@@ -1,18 +1,8 @@
 ---
 - name: Install tools, necessary for compiling crosstool-ng
-  apt: name={{item}} state=present
-  with_items:
-    - gperf
-    - bison
-    - flex
-    - texinfo
-    - help2man
-    - gawk
-    - libncurses5-dev
-    - make
-    - python-dev
-    - dh-autoreconf
-    - libtool-bin
+  apt:
+    name: ['gperf', 'bison', 'flex', 'texinfo', 'help2man', 'gawk', 'libncurses5-dev', 'make', 'python-dev', 'dh-autoreconf', 'libtool-bin']
+    state: present
   become: true
 
 - name: Copy rpi toolchain configuration file
