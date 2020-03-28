@@ -79,7 +79,7 @@ fi
 
 cd "crosstool-ng"
 
-if [ ! -e config/comp_libs.in ]; then
+if [ ! -e configure ]; then
   ./bootstrap
 fi
 
