@@ -1,7 +1,7 @@
 ---
 - name: Install tools, necessary for compiling crosstool-ng
   apt:
-    name: ['gperf', 'bison', 'flex', 'texinfo', 'help2man', 'gawk', 'libncurses5-dev', 'make', 'python-dev', 'dh-autoreconf', 'libtool-bin']
+    name: ['gperf', 'bison', 'flex', 'texinfo', 'help2man', 'gawk', 'libncurses5-dev', 'make', 'python3-dev', 'dh-autoreconf', 'libtool-bin']
     state: present
   become: true
 
