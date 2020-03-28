@@ -57,6 +57,11 @@ function sync_additionals_into_sysroot() {
                                           :/lib/arm-linux-gnueabihf/libidn* \
                                           "$SYSROOT_DIR"
 
+    # create symlinks for some libraries
+    pushd "$SYSROOT_DIR/usr/lib"
+    ln -sf arm-linux-gnueabihf/libmosquitto.so* .
+    popd
+
     # write LD config file for the sysroot
     mkdir -p "$SYSROOT_DIR/etc/"
     chmod u+w "$SYSROOT_DIR/etc/"
