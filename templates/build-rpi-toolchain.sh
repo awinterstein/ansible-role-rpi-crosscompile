@@ -27,8 +27,8 @@ function sync_additionals_into_sysroot() {
                                           :/usr/lib/arm-linux-gnueabihf/libgraphite2.* \
                                           :/usr/lib/arm-linux-gnueabihf/libpcre.* \
                                           :/lib/arm-linux-gnueabihf/libz.* \
-                                          :/lib/arm-linux-gnueabihf/libglib-2.0.* \
                                           :/lib/arm-linux-gnueabihf/libpcre.* \
+                                          :/opt/vc/include/* \
                                           :/opt/vc/lib/* \
                                           \
                                           :/usr/include/pqxx \
@@ -36,7 +36,7 @@ function sync_additionals_into_sysroot() {
                                           :/usr/include/mpd \
                                           :/usr/lib/arm-linux-gnueabihf/libpq* \
                                           :/usr/lib/arm-linux-gnueabihf/libtag* \
-                                          :/usr/lib/libmpdclient.* \
+                                          :/usr/lib/arm-linux-gnueabihf/libmpdclient.* \
                                           :/usr/lib/arm-linux-gnueabihf/libldap_r* \
                                           :/usr/lib/arm-linux-gnueabihf/libgssapi_krb5* \
                                           :/usr/lib/arm-linux-gnueabihf/libicuuc* \
