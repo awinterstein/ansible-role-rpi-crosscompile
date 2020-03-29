@@ -17,3 +17,4 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 # help the boost find script to locate the headers
 SET(BOOST_INCLUDEDIR ${CMAKE_FIND_ROOT_PATH}/usr/include)
+SET(BOOST_LIBRARYDIR ${CMAKE_FIND_ROOT_PATH}/usr/lib/arm-linux-gnueabihf)
