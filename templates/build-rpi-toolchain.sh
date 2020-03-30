@@ -12,6 +12,8 @@ function sync_additionals_into_sysroot() {
     rsync -avzR $RASPI_USER@$RASPI_ADDRESS:/usr/include/boost \
                                           :/usr/include/spdlog \
                                           :/usr/include/mosquitto.h \
+                                          :/usr/include/zlib.h \
+                                          :/usr/include/zconf.h \
                                           :/usr/lib/arm-linux-gnueabihf/libz.* \
                                           :/usr/lib/arm-linux-gnueabihf/libssl* \
                                           :/usr/lib/arm-linux-gnueabihf/libcrypto* \
@@ -55,6 +57,7 @@ function sync_additionals_into_sysroot() {
                                           :/lib/arm-linux-gnueabihf/libcom_err* \
                                           :/lib/arm-linux-gnueabihf/libkeyutils* \
                                           :/lib/arm-linux-gnueabihf/libidn* \
+                                          :/lib/arm-linux-gnueabihf/libz.* \
                                           "$SYSROOT_DIR"
 
     # create symlinks for some libraries
