@@ -14,6 +14,8 @@ function sync_additionals_into_sysroot() {
                                           :/usr/include/mosquitto.h \
                                           :/usr/include/zlib.h \
                                           :/usr/include/zconf.h \
+                                          :/usr/include/openssl \
+                                          :/usr/include/arm-linux-gnueabihf/openssl \
                                           :/usr/lib/arm-linux-gnueabihf/libz.* \
                                           :/usr/lib/arm-linux-gnueabihf/libssl* \
                                           :/usr/lib/arm-linux-gnueabihf/libcrypto* \
@@ -54,6 +56,8 @@ function sync_additionals_into_sysroot() {
                                           :/usr/lib/arm-linux-gnueabihf/libtasn1* \
                                           :/usr/lib/arm-linux-gnueabihf/libp11* \
                                           :/usr/lib/arm-linux-gnueabihf/libffi* \
+                                          :/usr/lib/arm-linux-gnueabihf/libcrypto.so.* \
+                                          :/usr/lib/arm-linux-gnueabihf/libssl.so.* \
                                           :/lib/arm-linux-gnueabihf/libcom_err* \
                                           :/lib/arm-linux-gnueabihf/libkeyutils* \
                                           :/lib/arm-linux-gnueabihf/libidn* \
