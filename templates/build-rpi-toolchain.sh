@@ -29,7 +29,9 @@ function sync_additionals_into_sysroot() {
                                           :/usr/lib/arm-linux-gnueabihf/libglib-2.0.* \
                                           :/usr/lib/arm-linux-gnueabihf/libfreetype.* \
                                           :/usr/lib/arm-linux-gnueabihf/libgraphite2.* \
+                                          :/usr/lib/arm-linux-gnueabihf/libidn2.* \
                                           :/usr/lib/arm-linux-gnueabihf/libpcre.* \
+                                          :/usr/lib/arm-linux-gnueabihf/libunistring.* \
                                           :/lib/arm-linux-gnueabihf/libz.* \
                                           :/lib/arm-linux-gnueabihf/libpcre.* \
                                           :/opt/vc/include/* \
@@ -67,6 +69,9 @@ function sync_additionals_into_sysroot() {
     # create symlinks for some libraries
     pushd "$SYSROOT_DIR/usr/lib"
     ln -sf arm-linux-gnueabihf/libmosquitto.so* .
+    ln -sf arm-linux-gnueabihf/libtag.so* .
+    ln -sf arm-linux-gnueabihf/libpq* .
+    ln -sf arm-linux-gnueabihf/libmpdclient.so* .
     popd
 
     # write LD config file for the sysroot
