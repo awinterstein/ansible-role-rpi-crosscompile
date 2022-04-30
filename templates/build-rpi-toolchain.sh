@@ -114,5 +114,5 @@ mkdir -p "{{tarballs_dir}}"
 sync_additionals_into_sysroot
 
 pushd "{{toolchains_dir}}" >/dev/null
-tar cfj "{{homedir}}/toolchain_{{toolchain_prefix}}.tbz2" "{{toolchain_prefix}}"
+tar cfj "{{ ansible_env.HOME }}/toolchain_{{toolchain_prefix}}.tbz2" "{{toolchain_prefix}}"
 popd >/dev/null
